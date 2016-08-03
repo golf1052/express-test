@@ -1,0 +1,11 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker build -t express-test .
+
+test:
+  override:
+    - docker run express-test npm test
