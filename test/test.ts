@@ -5,3 +5,9 @@ suite('test', function () {
         assert.equal(true, true);
     });
 });
+
+suite('failing test', function () {
+    test('failing test', function () {
+        assert.equal(true, false);
+    });
+});
