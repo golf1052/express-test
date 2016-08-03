@@ -1,0 +1,21 @@
+{
+  "name": "express-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node bin/src/app.js",
+    "test": "mocha -u tdd bin/test/test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "add-1-to-a-number": "^1.0.0",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.30",
+    "@types/mocha": "^2.2.29",
+    "mocha": "^3.0.0"
+  }
+}

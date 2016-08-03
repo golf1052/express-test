@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "outDir": "bin",
+        "types": [
+            "express",
+            "mocha"
+        ]
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
