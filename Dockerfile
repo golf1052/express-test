@@ -1,7 +1,5 @@
 FROM node:argon
 
-RUN npm --silent install -g typescript@beta
-
 RUN mkdir -p /app
 WORKDIR /app
 COPY package.json /app/
