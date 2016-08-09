@@ -7,7 +7,7 @@ COPY tsconfig.json /app/
 RUN npm --silent install
 ADD src /app/src
 ADD test /app/test
-RUN tsc
+RUN node_modules/typescript/bin/tsc
 EXPOSE 3000
 
 CMD ["npm", "start"]
