@@ -2,9 +2,23 @@
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     "version": "0.1.0",
-    "command": "tsc",
+    "command": "sh",
     "isShellCommand": true,
-    "args": ["--watch", "-p", "."],
-    "showOutput": "silent",
-    "problemMatcher": "$tsc"
+    "showOutput": "always",
+    "tasks": [
+        {
+            "taskName": "Typescript Watch",
+            "args": ["tsc", "--watch", "-p", "."],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "taskName": "Docker build",
+            "args": ["docker", "build", "-t", "express-test", "."],
+            "isBuildCommand": true
+        },
+        {
+            "taskName": "Docker run",
+            "args": ["docker", "run", "-p", "3000:3000", "--name", "express-test", "-d", "express-test"]
+        }
+    ]
 }
