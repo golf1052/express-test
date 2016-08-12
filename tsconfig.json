@@ -6,9 +6,11 @@
         "types": [
             "express",
             "mocha"
-        ]
+        ],
+        "allowJs": true
     },
     "exclude": [
-        "node_modules"
+        "node_modules",
+        "src/static"
     ]
 }
